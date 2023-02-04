@@ -27,4 +27,4 @@ $payload = '<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs
 
 $request = Invoke-RestMethod -Method Post -Uri $uri -Body $payload -UserAgent $userAgent -UseBasicParsing
 
-$response = $request.InnerXml
+$request.InnerXml
